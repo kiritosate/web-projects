@@ -1,0 +1,33 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.image-div{
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div-text{
+    font-weight: bold;
+    font-size: 0.5rem;
+    background-image: url("image.webp");
+    filter: grayscale(1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    --webkit-background-clip: text;
+    height: 100vh;
+    word-break: break-all;
+    line-height: 5px;
+    max-height: 100vh;
+    text-overflow: ellipsis;
+    font-family: poppins;
+}
