@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.login-div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 20%;
+    border-radius: 0.3rem;
+    box-shadow: 5px 3px 3px gray;
+}
+form{
+    width: fit-content;
+    margin-top: 2em;
+}
+
+.entry{
+    width: 250px;
+    height: 1.80em;
+    margin-top: 5px;
+}
+#submit-btn{
+    margin-top: 5px;
+    
+}
