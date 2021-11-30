@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: monospace;
+    list-style: none;
+    overflow-x: hidden;
+}
+#app{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .5em;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#app>li{
+    padding: 2.2em;
+}
+#app>li:hover{
+    background-color: gainsboro;
+}
+img[class='male']{
+    border-radius: .10em;
+    border: 1px solid black;
+}
+img[class='female']{
+    border-radius: .10em;
+    border: 1px solid pink;
+}
+.info{
+    margin-top: .5rem;
+}
+#navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+#navcontents{
+    padding: 1.5em;
+    display: flex;
+    width: 100%;
+}
+#dir{
+    margin-top: .8em;
+    display: flex;
+    right: 3em;
+}
+#dir>li{
+    padding: 0em .5em 0em .5em;
+    text-transform: capitalize;
+    cursor: pointer;
+    max-width: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+#dir>li:hover{
+    color: gray;
+}
+#app h4{
+    padding: 2em;
+    cursor: pointer;
+}  
+#user-image{
+    border-radius: 100%;
+    box-shadow: .1em .2em .3em .2rem rgb(71, 59, 59);
+}
+#morebtn{
+
+}
+@media only screen and (min-width:200px) {
+    #app{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:400px) {
+    #app{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width:600px) {
+    #app{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width:800px) {
+    #app{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (min-width:1000px) {
+    #app{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
